@@ -10,7 +10,7 @@ body {
 .emphasis {
 	color: 46bdc6;
 	font-weight: 700;
-	font-family: Montserrat;
+	font-family: Raleway;
 }
 hr {
 	border: 1px solid #888;
@@ -35,4 +35,22 @@ a:active {
 	padding: 0px;
 	float: center;
 	width: 640px;
+}
+
+/* colour animations */
+@keyframes example {
+  0%   {background-color:#ff0;}
+  25%  {background-color:#fff;}
+  50%  {background-color:#95d;}
+  75%  {background-color:#222;}
+  100% {background-color:#ff0;}
+}
+
+/* The element to apply the animation to */
+.flagicon {
+  position: relative;
+  background-color: yellow;
+  animation-name: example;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
 }
