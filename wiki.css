@@ -1,0 +1,38 @@
+body {
+	background-color: #222;
+	color: #ddd;
+	font-family: Archivo, Arial, sans-serif;
+}
+.infobox {
+	background-color: #444;
+	border: 2px solid #888;
+}
+.emphasis {
+	color: 46bdc6;
+	font-weight: 700;
+	font-family: Montserrat;
+}
+hr {
+	border: 1px solid #888;
+}
+a {
+	text-decoration: none;
+}
+a:link {
+	color: #7bf;
+}
+a:visited {
+	color: #b7f;
+}
+a:hover {
+	color: #def;
+}
+a:active {
+	color: #fff;
+}
+.center {
+	margin: auto;
+	padding: 0px;
+	float: center;
+	width: 640px;
+}

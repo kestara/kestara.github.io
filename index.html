@@ -1,0 +1,42 @@
+<head>
+	<title>Kyrla</title>
+	<link rel="stylesheet" href="wiki.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+
+<body>
+<table class="infobox" style="width:22em;line-height: 1.5em;margin-left:auto;margin-right:auto">
+	<caption class="summary" style="font-size: 125%; font-family: Montserrat;">Kyrla's room of links</caption>
+<tbody>
+	<tr>
+		<th style="text-align:center;font-size:125%;font-weight:bold;padding-top:6px;">
+			<span class="flagicon"><a href="http://kyrla.xyz"><img alt="kyrla.xyz icon" src="images/kx1.png" height="30" class="thumbborder" /></a></span>
+		</th>
+	</tr>
+	<tr><td><hr /></td></tr>
+	<tr><td style="text-align:center;">Today's date is <b  class="emphasis" id="vdater"></b>
+		<script>
+			var nowsync = Date.now();
+			var daydiff = Math.floor((nowsync - 1523664000000) / 86400000);
+			var vyear = Math.floor(daydiff/370) + 1344;
+			var vweek = Math.floor((daydiff%370)/10);
+			var vday = daydiff % 10 + 1;
+			var dday = vday + (10*Math.floor(vweek%3));
+			var vmonthn = Math.floor(vweek/3);
+			var dmontha = ["yr", "sr", "kr", "gr", "mr", "fr", "hr", "br", "jr", "sh", "ll", "el", "mw"];
+//			let div = document.createElement('div');
+//			div.className = "infobox";
+			vdater.innerHTML = (vyear + "-" + dmontha[vmonthn] + "-" + dday);
+//			vdater.appendChild(div);
+		</script>
+	</td></tr>
+	<tr><td><hr /></td></tr>
+	<tr>
+	<td>
+		WIP website! Most of my stuff is <a href="http://asmodeanunderscore.com">still over here</a> at the moment
+	</td>
+	</tr>	
+</tbody>
+</table>
+</body>
