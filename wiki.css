@@ -10,7 +10,7 @@ body {
 .emphasis {
 	color: 46bdc6;
 	font-weight: 700;
-	font-family: Raleway;
+	font-family: Dosis;
 }
 hr {
 	border: 1px solid #888;
@@ -35,6 +35,9 @@ a:active {
 	padding: 0px;
 	float: center;
 	width: 640px;
+}
+h2 {
+	margin-bottom: 15px;
 }
 
 /* colour animations */
