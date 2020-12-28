@@ -39,6 +39,10 @@ a:active {
 h2 {
 	margin-bottom: 15px;
 }
+.cover {
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
 
 /* colour animations */
 @keyframes example {
