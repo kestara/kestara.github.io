@@ -1,0 +1,77 @@
+body {
+	background-color: #222;
+	color: #0c0c0c;
+	font-family: Archivo, Arial, sans-serif;
+}
+.infobox {
+	background-color: #c0c0c0;
+	border: 2px solid #888;
+}
+.emphasis {
+	color: 46bdc6;
+	font-weight: 700;
+	font-family: Dosis;
+}
+hr {
+	border: 1px solid #888;
+}
+a {
+	text-decoration: none;
+}
+a:link {
+	color: #7bf;
+}
+a:visited {
+	color: #b7f;
+}
+a:hover {
+	color: #def;
+}
+a:active {
+	color: #fff;
+}
+.center {
+	margin: auto;
+	padding: 0px;
+	float: center;
+	width: 640px;
+}
+h2 {
+	margin-bottom: 15px;
+}
+.cover {
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+.seatbar {
+	width: 86px;
+	text-align: center;
+	text-shadow: 0px 0px 2px #000000;
+	font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: 900;
+	color: white;
+	-webkit-text-stroke: 2px black;
+	font-size: 40px;
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* colour animations */
+@keyframes example {
+  0%   {background-color:#ff0;}
+  25%  {background-color:#fff;}
+  50%  {background-color:#95d;}
+  75%  {background-color:#222;}
+  100% {background-color:#ff0;}
+}
+
+/* The element to apply the animation to */
+.flagicon {
+  position: relative;
+  background-color: yellow;
+  animation-name: example;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
