@@ -11,11 +11,12 @@
 	var sse = 0; // Seconds Since Eight
 	var tb = -1; // Time Balance
 	var tstate = 0; // current STATE of the timer. 0 = OFF, 1 = ON
+	var s = -50; //this has to be a global variable :sob:
 		function init1o1o(starthour) {
 			var today = new Date();
 			var h = today.getHours();
 			var m = today.getMinutes();
-			var s = today.getSeconds();
+			s = today.getSeconds();
 			tb = - ((h-starthour)*3600 + m*60 + s - 1);
 			if (h < 8) {document.getElementById('timeleft').style = "z-index:1; margin-top:-69px; margin-right:11px; color:#aaf683; text-align:right; font-size:75pt; font-weight:700;";}
 			startTime();
@@ -24,7 +25,8 @@
 			var today = new Date();
 			var h = today.getHours();
 			var m = today.getMinutes();
-			var s = today.getSeconds();
+			if (today.getSeconds() - s == 2) {tb += ztm(tstate);} // corrects for only updating every like 1001ms
+			s = today.getSeconds();
 			sse = (h-8)*3600 + m*60 + s;
 			tb += ztm(tstate);
 			document.getElementById('timeleft').innerHTML = stt(tb);
