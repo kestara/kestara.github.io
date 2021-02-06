@@ -30,6 +30,7 @@
 			sse = (h-8)*3600 + m*60 + s;
 			tb += ztm(tstate);
 			document.getElementById('timeleft').innerHTML = stt(tb);
+			h = checkTime(h);
 			m = checkTime(m);
 			s = checkTime(s);
 			// var datestring = today.getUTCFullYear() + "-" + checkTime(today.getUTCMonth() + 1) + "-" + checkTime(today.getUTCDate()) + " ";
