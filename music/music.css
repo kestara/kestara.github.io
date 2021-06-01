@@ -54,6 +54,9 @@ a:active {
 .single {
 	color: #db5334;
 }
+.faded {
+	color: #666;
+}
 .titledrop {
 	color: #b1e3e7;
 	display: inline;
