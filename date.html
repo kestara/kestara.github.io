@@ -1,0 +1,24 @@
+<head>
+	<title>Vaaran Calendar</title>
+	<link rel="stylesheet" href="wiki.css">
+</head>
+
+<body>
+<table>
+	<tr><td id="vdater" style="text-align:center;font-weight:bold;">
+		<script>
+			var nowsync = Date.now();
+			var daydiff = Math.floor((nowsync - 1523664000000) / 86400000);
+			var vyear = Math.floor(daydiff/370) + 1344;
+			var vweek = Math.floor((daydiff%370)/10);
+			var vday = daydiff % 10 + 1;
+			var dday = vday + (10*Math.floor(vweek%3));
+			var vmonthn = Math.floor(vweek/3);
+			var dmontha = ["Yearmun", "Suramun", "Karmun", "Greimun", "Miramun", "Farmun", "Haramun", "Barmun", "Joarmun", "Shoremun", "Lilymun", "Earlymun", "Midwinter"];
+			let div = document.createElement('div');
+			div.className = "infobox";
+			vdater.innerHTML = ("Today's date is " + dday + " " + dmontha[vmonthn] + " " + vyear);
+			vdater.appendChild(div);
+		</script>
+	</td></tr>
+</body>
