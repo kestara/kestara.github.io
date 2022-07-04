@@ -1,11 +1,9 @@
 <head>
 	<title>Vaaran Calendar</title>
-	<link rel="stylesheet" href="wiki.css">
 </head>
 
 <body>
-<table>
-	<tr><td id="vdater" style="text-align:center;font-weight:bold;">
+<p id="vdater">
 		<script>
 			var nowsync = Date.now();
 			var daydiff = Math.floor((nowsync - 1523664000000) / 86400000);
@@ -20,5 +18,5 @@
 			vdater.innerHTML = ("Today's date is " + dday + " " + dmontha[vmonthn] + " " + vyear);
 			vdater.appendChild(div);
 		</script>
-	</td></tr>
+</p>
 </body>
