@@ -1,16 +1,21 @@
 body {
 	background-color: #222;
 	color: #ddd;
-	font-family: Archivo, Arial, sans-serif;
+	font-family: DM Sans, Archivo, Helvetica, Arial, sans-serif;
+}
+h2 {
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 .infobox {
 	background-color: #444;
 	border: 2px solid #888;
 }
 .emphasis {
-	color: 46bdc6;
+	color: DB5334;
+/*	color: 46bdc6;	*/
 	font-weight: 700;
-	font-family: Dosis;
+	font-family: Barlow Condensed, Dosis, Agency FB, sans-serif;
 }
 hr {
 	border: 1px solid #888;
@@ -18,6 +23,7 @@ hr {
 a {
 	text-decoration: none;
 }
+/*
 a:link {
 	color: #7bf;
 }
@@ -27,6 +33,16 @@ a:visited {
 a:hover {
 	color: #def;
 }
+*/
+a:link {
+	color: #f77;
+}
+a:visited {
+	color: #fb7;
+}
+a:hover {
+	color: #fed;
+}
 a:active {
 	color: #fff;
 }
@@ -35,9 +51,6 @@ a:active {
 	padding: 0px;
 	float: center;
 	width: 640px;
-}
-h2 {
-	margin-bottom: 15px;
 }
 .cover {
 	margin-top: 1px;
