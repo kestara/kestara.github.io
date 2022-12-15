@@ -1,7 +1,7 @@
 <head>
 	<title>1on1off</title>
 	<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet"> 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,700;1,700&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,700;1,700&display=swap">
 	<link rel="icon" href="1o1o.ico">
 	
 	<script>
@@ -62,13 +62,13 @@
 		function toggle() {
 			if (tstate == 1) {
 				tstate = 0;
-				document.getElementById('togglebutton').src = "images/togon.png";
-				document.getElementById('statusbutton').src = "images/statoff.png";
+				document.getElementById('togglebutton').src = "images/togon.svg";
+				document.getElementById('statusbutton').src = "images/statoff.svg";
 				console.log("1→0");
 			} else if (tstate == 0) {
 				tstate = 1;
-				document.getElementById('togglebutton').src = "images/togoff.png";
-				document.getElementById('statusbutton').src = "images/staton.png";
+				document.getElementById('togglebutton').src = "images/togoff.svg";
+				document.getElementById('statusbutton').src = "images/staton.svg";
 				console.log("0→1");
 			}
 		}
@@ -81,15 +81,15 @@
 	</script>
 </head>
 
-<body onload="init1o1o(8)"> <!-- Set this to the hour of the day you want to start the day at (8 → 8am)-->
-	<div class="containerdiv" style="position:absolute; font-family:Barlow Semi Condensed; font-style:italic; left:0px; top:0px; width:480px; height:320px;">
-		<img src="images/1o1obg.png" style="z-index:-1; position:absolute; left:0px; top:0px;"/>
-		<p id="currenttime" style="z-index:1; margin-top:1px; margin-right:65px; color:#ffffff; text-align:right; font-size:35pt; font-weight:700;">09:11:15</p>
-		<p id="timeleft" style="z-index:1; margin-top:-80px; margin-right:15px; color:#a4243b; text-align:right; font-size:75pt; font-weight:700;">100</p>
-		<img src="images/topmask1.png" style="z-index:5; position:absolute; left:0px; top:0px;"/>
-		<img id="togglebutton" src="images/togon.png" onclick="toggle()" style="z-index:11; position:absolute; left:292px; top:132px;" />
-		<img id="statusbutton" src="images/statoff.png" style="z-index:11; position:absolute; left:16px; top:132px;" />
-		<img id="resetbutton" src="images/resetbtn.png" ondblclick="resetTb()" style="z-index:11; position:absolute; left:252px; top:132px;" />
+<body onload="init1o1o(9)" style="background-color:#222222"> <!-- Set this to the hour of the day you want to start the day at (8 → 8am)-->
+	<div class="containerdiv" style="position:absolute; font-family:Barlow; font-style:italic; left:0px; top:0px; width:480px; height:320px;">
+		<img src="images/1o1obg.svg" style="z-index:-1; position:absolute; left:0px; top:0px;"/>
+		<p id="currenttime" style="z-index:1; margin-top:1.45px; margin-right:65px; color:#ffffff; text-align:right; font-size:35pt; font-weight:700;">09:11:15</p>
+		<p id="timeleft" style="z-index:1; margin-top:-79.6px; margin-right:15px; color:#a4243b; text-align:right; font-size:75pt; font-weight:700;">100</p>
+		<img src="images/topmask1.svg" style="z-index:5; position:absolute; left:0px; top:0px;"/>
+		<img id="togglebutton" src="images/togon.svg" onclick="toggle()" style="z-index:11; position:absolute; left:292px; top:132px;" />
+		<img id="statusbutton" src="images/statoff.svg" style="z-index:11; position:absolute; left:16px; top:132px;" />
+		<img id="resetbutton" src="images/resetbtn.svg" ondblclick="resetTb()" style="z-index:11; position:absolute; left:252px; top:132px;" />
 	</div>
 
 </body>
