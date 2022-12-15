@@ -1,9 +1,7 @@
 <head>
 	<title>1on1off</title>
 	<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet"> 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,700;1,700&display=swap">
 	<link rel="icon" href="1o1o.ico">
 	
 	<script>
@@ -18,7 +16,7 @@
 			var m = today.getMinutes();
 			s = today.getSeconds();
 			tb = - ((h-starthour)*3600 + m*60 + s - 1);
-			if (h < 8) {document.getElementById('timeleft').style = "z-index:1; margin-top:-69px; margin-right:11px; color:#aaf683; text-align:right; font-size:75pt; font-weight:700;";}
+			if (h < 8) {document.getElementById('timeleft').style = "z-index:1; margin-top:-80px; margin-right:15px; color:#aaf683; text-align:right; font-size:75pt; font-weight:700;";}
 			startTime();
 		}
 		function startTime() {
@@ -57,9 +55,9 @@
 			return k;
 		}
 		function parityCheck() {
-			if (tb == 1) {document.getElementById('timeleft').style = "z-index:1; margin-top:-69px; margin-right:11px; color:#aaf683; text-align:right; font-size:75pt; font-weight:700;";}
-			if (tb == 0) {document.getElementById('timeleft').style = "z-index:1; margin-top:-69px; margin-right:11px; color:#c0c0c0; text-align:right; font-size:75pt; font-weight:700;";}
-			if (tb == -1) {document.getElementById('timeleft').style = "z-index:1; margin-top:-69px; margin-right:11px; color:#a4243b; text-align:right; font-size:75pt; font-weight:700;";}
+			if (tb == 1) {document.getElementById('timeleft').style = "z-index:1; margin-top:-80px; margin-right:15px; color:#aaf683; text-align:right; font-size:75pt; font-weight:700;";}
+			if (tb == 0) {document.getElementById('timeleft').style = "z-index:1; margin-top:-80px; margin-right:15px; color:#c0c0c0; text-align:right; font-size:75pt; font-weight:700;";}
+			if (tb == -1) {document.getElementById('timeleft').style = "z-index:1; margin-top:-80px; margin-right:15px; color:#a4243b; text-align:right; font-size:75pt; font-weight:700;";}
 		}
 		function toggle() {
 			if (tstate == 1) {
@@ -84,10 +82,10 @@
 </head>
 
 <body onload="init1o1o(8)"> <!-- Set this to the hour of the day you want to start the day at (8 → 8am)-->
-	<div class="containerdiv" style="position:absolute; font-family:Archivo; left:0px; top:0px; width:480px; height:320px;">
+	<div class="containerdiv" style="position:absolute; font-family:Barlow Semi Condensed; font-style:italic; left:0px; top:0px; width:480px; height:320px;">
 		<img src="images/1o1obg.png" style="z-index:-1; position:absolute; left:0px; top:0px;"/>
-		<p id="currenttime" style="z-index:1; margin-top:7px; margin-right:64px; color:#ffffff; text-align:right; font-size:35pt; font-weight:700;">09:11:15</p>
-		<p id="timeleft" style="z-index:1; margin-top:-69px; margin-right:11px; color:#a4243b; text-align:right; font-size:75pt; font-weight:700;">100</p>
+		<p id="currenttime" style="z-index:1; margin-top:1px; margin-right:65px; color:#ffffff; text-align:right; font-size:35pt; font-weight:700;">09:11:15</p>
+		<p id="timeleft" style="z-index:1; margin-top:-80px; margin-right:15px; color:#a4243b; text-align:right; font-size:75pt; font-weight:700;">100</p>
 		<img src="images/topmask1.png" style="z-index:5; position:absolute; left:0px; top:0px;"/>
 		<img id="togglebutton" src="images/togon.png" onclick="toggle()" style="z-index:11; position:absolute; left:292px; top:132px;" />
 		<img id="statusbutton" src="images/statoff.png" style="z-index:11; position:absolute; left:16px; top:132px;" />
