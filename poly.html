@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Polyrhythm Generator</title>
+	<link rel="stylesheet" href="wiki5.css">
+</head>
+<body>
+<h2>Polyrhythm Chart Generator</h2>
+<p>Enter values for X and Y</p>
+<form>
+  X (e.g. 7) &nbsp;<input type="text" name="nx"><br>
+  Y (e.g. 11) <input type="text" name="ny"><br>
+  <input type="submit" value="Submit">
+</form>
+<p id="demo">if you're seeing this something broke, whoops</p>
+<script>
+function getUrlVars() {
+var vars = {};
+var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+vars[key] = value;
+});
+return vars;
+}
+varray = getUrlVars();
+console.log(varray);
+vx = varray["nx"];
+vy = varray["ny"];
+console.log(vx);
+console.log(vy);
+var vtext = "";
+var k = 0
+vtext += "<b class='left'>" + vx + "</b> : <b>" + vy + "</b> polyrhythm - <br />";
+for (var i = 1; i <= vy; i++) {
+	for (var j = 1; j <= vx; j++) {
+		k += 1;
+		if (k % vy == 1) {vtext += "<b>";}
+		if (j == 1) {vtext += "<b class='left'>";}
+		if (k % vy == 1 && j == 1) {vtext += "<b class='first'>";}
+		vtext += j + " ";
+		if (k % vy == 1) {vtext += "</b>";}
+		if (j == 1) {vtext += "</b>";}
+		if (k % vy == 1 && j == 1) {vtext += "</b>";}
+	}
+	vtext += "<br />";
+}
+vtext += "<b class='first'>1</b>";
+document.getElementById("demo").innerHTML = vtext;
+</script>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><small>If there are any issues, contact @Asmo#2284 on discord</small></p>
+</body>
+</html>
+ 
