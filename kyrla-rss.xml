@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>Kyrla [RSS feed]</title>
+  <link>https://www.kyrla.xyz/kyrla-rss.xml</link>
+  <description>Kyrla's latest projects</description>
+  
+  <item>
+    <title>Music for 18 Musicians</title>
+    <link>https://www.youtube.com/watch?v=DGfnWENSO0Q</link>
+    <description>[Album #5] Cover of Steve Reich's "Music for 18 Musicians" | 49:40</description>
+	<pubDate>02 Nov, 2022</pubDate>
+  </item>
+  
+  <item>
+    <title>Modern Technic</title>
+    <link>https://www.kyrla.xyz/music/mt.html</link>
+    <description>[Album #4] the neon lights we were promised haven't arrived | 53:56</description>
+	<pubDate>05 Aug, 2022</pubDate>
+  </item>
+</channel>
+
+</rss>
